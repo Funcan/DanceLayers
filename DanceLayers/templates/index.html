@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
+    <html lang="en">
+    <head>
+        <title>Dance Layers</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
     <body>
-        <header>Hello and Welcome to Dance Layers!</header>
+        <div class="jumbotron text-center">
+        <h1>Hello and Welcome to Dance Layers!</h1>
+        <p>Inspired by Julie Brown's excellent solo class at The Spoonful 2016.</p>
+        <p>The idea here is to explore combinations of movement that you might otherwise not do.</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>Start with your {{first[0]}}:</h3>
+              {{first[1]}}
+            </div>
+            <div class="col-sm-4">
+              <h3>Add {{second[0]}}:</h3>
+              {{second[1]}}  
+            </div>
+            <div class="col-sm-4">
+              <h3>Then add {{third[0]}}:</h3>        
+              {{third[1]}}
+            </div>
+          </div>
+        </div>
         <br>
-        <br>
-        Inspired by Julie Brown's excellent solo class at The Spoonful 2016. The idea here is to explore combinations of movement that you might otherwise not do.
-        <br>
-        Play some blues, get used to each 'layer' and then add another.
-        <br>
-        They're randomly generated from a predefined list, so some of the combinations may be impossible. Just hit refresh to get a new one. Enjoy!
-        <br>
-        <br>
-        Start with your {{first[0]}}: {{first[1]}}<br>
-        Add {{second[0]}}: {{second[1]}}<br>
-        Then add {{third[0]}}: {{third[1]}}
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="container">
+          <div class="jumbotron">
+            Play some blues, get used to each 'layer' and then add another.
+            <br>
+            They're randomly generated from a predefined list, so some of the combinations may be impossible. Just hit refresh to get a new one. Enjoy!
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
         Source code available <a href="https://github.com/saoili/DanceLayers">on github</a> and contributions welcome.
+            </div>
+          </div>
+        </div>
     </body>
 </html>
